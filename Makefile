@@ -1,2 +1,2 @@
-all: jumble.c
-	g++ -laspell jumble.c -o jumble
+all: main.c
+	gcc -laspell main.c -o jumble
