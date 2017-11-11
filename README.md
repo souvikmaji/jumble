@@ -1,7 +1,9 @@
 # Jumble
+Solve
 Word jumble solver. Permutes all possible combination of a letters and matches with a dictionary.
-Requeires *Aspell 0.6*.
+Install *Aspell 0.6*.
+```
+brew install aspell
+```
 
-##TODO:
-1. Modify permutation algo.
-2. Check why printed twice.
+Use `make` to install, and run using `jumble [word list seperated by spaces]`

@@ -66,7 +66,7 @@ void permute(char* a, int l, int r)
 		int correct = aspell_speller_check(spell_checker, a, -1);
 
 		if (correct)	{
-			printf("%s: Correct\n", a);
+			printf("%s\n", a);
 		}
 		else if (!correct) {
 		}
@@ -103,6 +103,7 @@ void initAspell()
 		printf("%s ", aspell_error_message(possible_err));
 	}
 	else {
+		printf("Unscrambled words:\n");
 		spell_checker = to_aspell_speller(possible_err);
 	}
 }
